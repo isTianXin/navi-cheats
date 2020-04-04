@@ -7,5 +7,5 @@ curl -s "wttr.in?lang=zh"
 curl -s "wttr.in?lang=zh&n0"
 
 # 通过特定参数显示天气信息 get weather info by query parameters
-curl -s "wttr.in/lang=zh&<query>"
+curl -s "wttr.in/<query>"
 
