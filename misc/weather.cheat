@@ -1,0 +1,11 @@
+% weather
+
+# 显示本地天气信息
+curl -s "wttr.in?lang=zh"
+
+# 显示本地当前天气信息
+curl -s "wttr.in?lang=zh&n0"
+
+# 通过特定参数显示天气信息
+curl -s "wttr.in/<query>"
+
