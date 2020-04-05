@@ -1,0 +1,25 @@
+% laradock, docker
+
+# 启动 laradock 容器
+cd $LARADOCK_HOME
+docker-compose up -d <container>
+
+$ container: --- --query "redis mysql php-fpm nginx"
+
+# 使用 laradock 提供的 compose 命令
+cd $LARADOCK_HOME
+docker-compose <command>
+
+# 进入 laradock 容器
+cd $LARADOCK_HOME
+docker-compose exec <container> bash
+
+# 停止 laradock 容器
+cd $LARADOCK_HOME
+docker-compose stop <container>
+
+$ container: docker ps | grep laradock | awk {'print $NF'} | awk -F _ {'print $2'}
+
+# 关闭 laradock 容器
+cd $LARADOCK_HOME
+docker-compose down
