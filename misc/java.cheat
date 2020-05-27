@@ -1,0 +1,5 @@
+% java, druid
+
+# druid 加密
+java -cp $DRUID_JAR com.alibaba.druid.filter.config.ConfigTools <password>
+
